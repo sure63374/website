@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./website1.css">
+    <style>
+        #web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px black solid; */
+
+
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 420px;
+        padding: 15px 0px;
+
+
+        #nav_menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            #navtext {
+                color: grey;
+                font-size: px;
+            }
+
+            #icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #icon {
+                    gap: 10px;
+                }
+
+
+
+            }
+        }
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        color: white;
+        padding: 143px 720px 50px 700px;
+        background: linear-gradient(to bottom, rgba(0, 175, 239, 0) 0%, rgba(0, 175, 239, 0) 2%, rgba(0, 175, 239, 0) 7%, rgba(240, 47, 23, 0) 11%, rgba(124, 109, 127, 0) 54%, rgba(0, 175, 239, 0.39) 100%), url("https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/home-bg.png") #000 fixed no-repeat;
+        background-size: cover;
+
+
+        #home_one {
+            font-size: 40px;
+            font-weight: bold;
+            width: 500px;
+        }
+
+        #home_two {
+
+            font-size: 16px;
+        }
+
+        #home_three {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 3px;
+            padding: 7px;
+            border: 2px rgb(4, 4, 4) solid;
+            border-radius: 4px;
+            background-color: #000;
+
+            #int {
+                padding: 5px;
+                border-radius: 4px;
+                width: 200px;
+                font-size: 15px;
+            }
+
+            #btn {
+                padding: 5PX;
+                border-radius: 4px;
+                color: white;
+                background-color: rgb(19, 160, 236);
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+    #subhome {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: whitesmoke;
+        padding: 50px 500px;
+
+        #circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            padding: 20px;
+            border-radius: 50%;
+            border-color: rgb(114, 194, 225);
+        }
+
+        #s1,
+        #s2,
+        #s3 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+
+        }
+
+        #s1dis,
+        #s2dis,
+        #s3dis {
+            text-align: start;
+            width: 180PX;
+            font-size: 20px;
+        }
+
+        #num {
+            font-weight: bold;
+        }
+
+
+
+    }
+
+    #maincont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #cont1,
+        #cont2,
+        #count3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px 200px;
+
+            #maindis {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                text-align: start;
+                /* border: 2px black solid; */
+                gap: 10px;
+                padding: 50px;
+
+                #contheading {
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+
+                #contsub {
+                    font-size: 18px;
+                    color: rgb(44, 31, 31);
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            }
+
+        }
+
+    }
+
+    #moto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 40px;
+
+        #moto1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #moto2 {
+            font-size: 17px;
+            color: rgb(34, 24, 24);
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        }
+
+        #lgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+    }
+
+    #commentsbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(237, 236, 236, 0.912);
+        padding: 20px 510px;
+        gap: 50px;
+
+        #cmtmoto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+
+            #chead {
+                font-size: 30px;
+                padding: 2px 250px;
+                width: 400px;
+                font-weight: bold;
+                color: grey;
+
+            }
+
+            #csub {
+                font-size: 20px;
+                color: grey;
+            }
+
+        }
+
+        #comments {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 10px;
+
+            #comment1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.597);
+                gap: 10px;
+
+                #imgborder {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(226, 224, 224, 0.966);
+                    padding: 20px 10px;
+
+                    #cmtimg {
+                        border-radius: 50%;
+                    }
+
+                }
+
+                #cdis {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    #rating {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: start;
+                        gap: 10px;
+
+                    }
+                }
+
+
+
+            }
+
+        }
+
+
+    }
+
+    #lastbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        #cont3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            #contheading {
+                font-size: 30px;
+
+            }
+
+            #contdis {
+                color: grey;
+                width: 320px;
+
+                text-align: center;
+            }
+
+            button {
+                background-color: rgb(116, 203, 238);
+                color: white;
+                border-radius: 3px;
+                padding: 10px 20px;
+                margin-top: 20px;
+            }
+        }
+
+
+
+    }
+
+    #fot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(234, 234, 234, 0.867);
+        padding: 10px 500px;
+        gap: 20px;
+
+        #two {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            #b1,
+            #b2 {
+                width: 380px;
+            }
+
+        }
+
+        #b3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            #xpost {
+                background-color: #000;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                gap: 5px;
+
+
+            }
+
+            #like {
+                background-color: rgb(33, 148, 243);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+
+        }
+
+
+
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div id="web">
+        <div id="navbar">
+            <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/logo.png" alt="">
+            <div id="nav_menu">
+                <div id="navtext">stay connected</div>
+                <div id="icons">
+                    <i id="icon" class="fa-brands fa-facebook fa-2x"></i>
+                    <i id="icon" class="fa-brands fa-twitter fa-2x"></i>
+                    <i id="icon" class="fa-brands fa-youtube fa-2x"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="home">
+            <div id="home_one">HTML BUNDLE IS HERE </div>
+            <div id="home_two">More than 10 unique HTML templates in one bundle isn't that awesome with a lot of
+                features and great design brought to you by PixFort.</div>
+            <form id="home_three">
+                <input id="int" type="email" placeholder="enter your email">
+                <input id="btn" type="button" value="SUBSCRIBE NOW">
+            </form>
+            <div id="note">*Note: Bundle ends in two weeks from now.</div>
+
+        </div>
+
+        <div id="subhome">
+            <div id="s1">
+                <div id="circle">
+                    <img id="img1" src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/1.png" alt="">
+                </div>
+                <div id="s1dis"><span id="num">+1500</span> High quality video tutorials</div>
+            </div>
+            <div id="s2">
+                <div id="circle">
+                    <img id="img2" src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/2.png" alt="">
+                </div>
+                <div id="s2dis"><span id="num">+40</span> Days Free trial demo subscribtion</div>
+            </div>
+            <div id="s3">
+                <div id="circle">
+                    <img id="img3" src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/3.png" alt="">
+                </div>
+                <div id="s3dis"><span id="num">+75</span> New books from store</div>
+            </div>
+
+
+        </div>
+        <div id="maincont">
+            <div id="cont1">
+                <div id="maindis">
+                    <div id="contheading">The most amazing thing is here</div>
+                    <div id="contsub">Our service is astonishingly thin and light.</div>
+                    <div id="contdis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, saepe veritatis a
+                        repellendus mollitia corrupti doloremque consectetur quae similique magnam facere velit
+                        provident
+                        magni delectus dicta. Quas quam vel a!</div>
+                </div>
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/machine.png" alt="">
+
+            </div>
+            <div id="cont2">
+
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/domains-that-never-sleep.png" alt="">
+                <div id="maindis">
+                    <div id="contheading">Bring it to life again with us</div>
+                    <div id="contsub">Our service is astonishingly thin and light.</div>
+                    <div id="contdis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis
+                        molestiae voluptatibus necessitatibus commodi repudiandae, odit repellendus. Officia enim harum
+                        fuga
+                        ipsum et, sunt exercitationem, reprehenderit est repellat, inventore aut.</div>
+                </div>
+            </div>
+            <div id="cont1">
+                <div id="maindis">
+                    <div id="contheading">Responsive ready wordpress</div>
+                    <div id="contsub">Our service is astonishingly thin and light.</div>
+                    <div id="contdis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, saepe veritatis a
+                        repellendus mollitia corrupti doloremque consectetur quae similique magnam facere velit
+                        provident
+                        magni delectus dicta. Quas quam vel a!</div>
+                </div>
+
+
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/website-builder.png" alt="">
+            </div>
+
+        </div>
+
+        <div id="moto">
+            <div id="moto1">Great people trusted our services</div>
+            <div id="moto2">great words from great people</div>
+            <div id="lgs">
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/logo_1.png" alt="">
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/logo_2.png" alt="">
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/logo_3.png" alt="">
+                <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/logo_4.png" alt="">
+            </div>
+        </div>
+
+        <div id="commentsbox">
+            <div id="cmtmoto">
+                <div id="chead">What our awesome clients say</div>
+                <div id="csub">great words from great people</div>
+            </div>
+            <div id="comments">
+                <div id="comment1">
+                    <div id="imgborder">
+                        <img id="cmtimg" src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/testimonials/envato-logo.png" alt="">
+                    </div>
+                    <div id="cdis">
+                        <div id="com1">Im a web designer, you guys are very inspiring I wish to see more work from maybe
+                            more freebies.</div>
+                        <div id="rating">
+                            <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/stars.original.png" alt="">
+                            <a href="">via envato.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment1">
+                    <div id="imgborder">
+                        <img id="cmtimg" src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/testimonials/unboune-logo.png" alt="">
+                    </div>
+                    <div id="cdis">
+                        <div id="com1">Great service with fast and relible support The design work and detail put into
+                            themes are great.</div>
+                        <div id="rating">
+                            <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/stars.original.png" alt="">
+                            <a href="">via pixfort.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="lastbox">
+            <div id="cont3">
+                <div id="contheading">Are you ready for this?</div>
+                <div id="contdis">More than 10,000 apps are waiting for you with awesome features and prices that will
+                    be great for you, join us now by entering you email and subscribe us now, wow.</div>
+                <button>subcribe now</button>
+            </div>
+            <img src="https://pixfort.website/themeforest/landing/flatpack/1-normal/images/1_normal/speed-and-security.png" alt="">
+        </div>
+        <div id="fot">
+            <div id="two">
+            <div id="b1">All rights reserved Copyright © 2014 FLATPACK by<b>Pix Fort</b></div>
+            <div id="b2">Your likes & share makes us happy!</div></div>
+            <div id="b3">
+                <div id="xpost">
+                    <img src="" alt="" style="height:20px;;">
+                    <div id="text">post</div>
+                </div>
+                <div id="like">
+                    <img src="./images/facebook-like-xxl.png" alt="" style="height: 20px;">
+                    <div id="text">like</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
